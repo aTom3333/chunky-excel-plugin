@@ -8,11 +8,20 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml']
 }
 
-apply plugin: 'application'
-mainClassName = 'dev.ferrand.chunky.ods.OdsPlugin'
+apply plugin: 'java'
 
 group 'dev.ferrand'
 version '1.0.0'
+
+jar {
+    manifest {
+        attributes "Main-Class": "dev.ferrand.chunky.ods.OdsPlugin"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
 
 compileJava {
     sourceCompatibility = JavaVersion.VERSION_1_8
