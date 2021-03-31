@@ -12,7 +12,7 @@ apply plugin: 'application'
 mainClassName = 'dev.ferrand.chunky.ods.OdsPlugin'
 
 group 'dev.ferrand'
-version '0.1.0'
+version '1.0.0'
 
 compileJava {
     sourceCompatibility = JavaVersion.VERSION_1_8

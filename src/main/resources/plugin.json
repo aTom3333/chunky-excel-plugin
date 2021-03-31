@@ -1,0 +1,8 @@
+{
+  "name": "OctreePlugin",
+  "author": "a_Tom",
+  "main": "dev.ferrand.chunky.ods.OdsPlugin",
+  "version": "1.0.0",
+  "targetVersion": "2.4.0",
+  "description": "Add a cool export option."
+}
